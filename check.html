@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body style='background-image:url("back.png");'>
+     <div >
+     <h1 class="left-align blue lighten-3" style="margin-top: 0%; padding-bottom:1%; padding-top:1%">UNITE</h1>
+
+
+
+     <div style="position: absolute;  margin-left: 15% ;margin-top: 0%; margin-right: 20%;margin-bottom: 1%; width: 350px; height: 300px; padding:-2%; background: rgba(255,255,255,1); border: 0px solid black; border-radius:20px;">
+       <h5 style="text-align:center; color: rgb(0,0,0);"> <strong>Enter Details </strong></h5>
+       <div style="display: grid; grid-template-columns: auto auto ;">
+         <div class="row">
+           <div class="input-field col s6">
+             <input id="from_place" type="text" class="validate">
+             <label for="first_name">From</label>
+           </div>
+           <div class="input-field col s6">
+             <input id="to_place" type="text" class="validate">
+             <label for="last_name">To</label>
+           </div>
+         </div><br>
+
+         </div>
+         <div >
+          <button id="search_daily" class="btn waves-effect waves-light blue darken-3 " style="margin-left: 40%; margin-top: 2%;">SEARCH</button>
+         </div>
+        <h4>Bus Schedules</h4>
+        <div id="daily_bus">
+
+        </div>
+        <h4>Train Schedules</h4>
+        <div id="daily_train">
+
+        </div>
+        <h4>Metro Schedules</h4>
+        <div id="daily_metro">
+
+        </div>
+
+       </div>
+
+     </div>
+   	</div>
+
+
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="materialize.min.js"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script type="text/javascript" src="js/login.js"></script>
+     <!-- <script>
+        function activatePlacesSearch(){
+          var inputf = document.getElementById('fromp');
+          var autocompletef = new google.maps.places.Autocomplete(inputf);
+          var inputt = document.getElementById('top');
+          var autocomplete = new google.maps.places.Autocomplete(inputt);
+        }
+      </script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlUWuuk2UB2Y-h58wS7F1K6D_NhYCQMV4&libraries=places&callback=activatePlacesSearch"></script> -->
+   </body>
+ </html>
+
+<!-- let new_div = document.getElementById('');
+
+new_div.innerHTML=`<div style="border: solid 5px; box-shadow: 6px 6px 0px rgb(22, 27, 105); border-radius: 5px; width: 26%; margin-left: 8%;margin-bottom: 1% ; padding-right:3%; padding-left:6%; padding-top:1%; padding-bottom:1%; ">
+                   <h6>From: ${namep}</h6>
+                   <h6>To: ${pnumberp}</h6>
+                   <h5>Name: </h5>
+                   <button class="accept_driver">Accept</button>
+                   </div>` -->

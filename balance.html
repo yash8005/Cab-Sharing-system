@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+
+     <link rel="stylesheet" href="inner.css">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body style='background-image:url("back.png");'>
+
+     <div class="container">
+     <h1 class="left-align" style="margin-bottom: 6%;margin-left: .8%;">UNITE</h1>
+
+
+     </div>
+     <div style="margin-bottom: 3%; margin-left: 10%; border: solid 3px; width:25%;padding: 1%">
+        <h5 class="left-align" >Available Balance (in Rs): </h5>
+        <p id="curr_balance">0</p> 
+     </div>
+
+     <input id="add_balance" type="number" placeholder="Enter Amount" style="width:21%; margin-left: 10%;margin-bottom: 2%">
+     <button id="driver_b_add">Add</button><br>
+      
+     <button id="add_100" class="btn waves-effect waves-light blue darken-3 btn-large" data-target="modal1" style="margin-left: 10%; margin-top: 0%;margin-bottom: 3%"">+ 100</button>
+     <button id="add_500" class="btn waves-effect waves-light blue darken-3 btn-large" data-target="modal2" style="margin-left: 1%; margin-top: 0%;margin-bottom: 3%"">+ 500</button>
+     <button id="add_1000" class="btn waves-effect waves-light blue darken-3 btn-large" data-target="modal2" style="margin-left: 1%; margin-top: 0%; margin-bottom: 3%">+ 1000</button>
+     <br>
+      <!-- -->
+      <a href="inner.html"  class="btn waves-effect waves-light blue darken-3 btn-large" data-target="modal1" style="margin-left: 15%; margin-top: 0%;">Add Money</a>
+     
+
+
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="materialize.min.js"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <!-- this file is just to check the functions of balance -->
+     <script type="text/javascript" src="js/balance.js"></script> 
+     <script type="text/javascript" src="js/login.js"></script>
+   </body>
+ </html>
